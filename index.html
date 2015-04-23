@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page</title>
+<style>
+*{ margin:0; padding:0;}
+ul{ list-style:none;}
+.t{ padding-bottom:12px;}
+.st{ padding:6px 0 4px;}
+.c{ margin:0 0 30px 0;}
+pre{ padding:12px 8px; margin-bottom:30px; background-color:#EEECCC;}
+body{font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+h5{ margin:0 0 10px 0; border-bottom:1px solid #EEE;}
+
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.wrap{ width:400px; margin:0 0 60px 30px;}
+
+.newsList li{ display:none;}
+#newsList2 li{ display:none;}
+
+.page-wrap{ width:100%; height:40px; position:absolute; left:0; bottom:0;}
+.pagenation{ position:absolute; left:60px; top:10px;}
+.pagenation li{ float:left; height:18px; padding:0 3px; line-height:18px; text-align:center; border:1px solid #999; margin-right:3px; cursor:pointer;}
+.pagenation li.on{ background-color:#669966; color:#FFF;}
+.pagenation li.ellipsis{ border:0; cursor:default;}
+.prev,.next{ position:absolute; top:10px; display:block;}
+.prev{ left:10px;}
+.next{ right:10px;}
+.grey{ color:#CCC; cursor:default;}
+
+
+#picList div{ width:300px; height:200px; line-height:200px; text-align:center; border:1px solid #669966;}
+</style>
+<script src="jquery.js"></script>
+<script src="pages.js"></script>
+<script>
+	$(function(){
+		$(".newsList").page({showLineCount:3,showMaxPages:7});
+		$("#newsList2").page({showLineCount:6,showMaxPages:9,effectTime:400});
+		$("#picList").page({showLineCount:1,showMaxPages:7});
+		$(".newsList4").page({showLineCount:4});
+		$(".newsList5").page({showLineCount:5,bPrevNext:false});
+		$(".newsList6").page({showLineCount:2,bPagination:false});
+	});
+</script>
+</head>
+
+<body>
+<h4 class="t">分页插件</h4>
+<p class="st">演示效果：</p>
+<div class="c">
+<!------------------------------->
+<h5>Case NO.1</h5>
+<div class="wrap">
+	<ul class="newsList4 dddd"> 
+        <li>01</li> 
+        <li>02</li> 
+        <li>03</li> 
+        <li>04</li> 
+        <li>05</li> 
+        <li>06</li> 
+        <li>07</li> 
+        <li>08</li> 
+        <li>09</li> 
+        <li>10</li> 
+        <li>11</li> 
+        <li>12</li> 
+        <li>13</li> 
+        <li>14</li> 
+        <li>15</li> 
+        <li>16</li> 
+    </ul>
+</div>
+<br>
+<br>
+<h5>Case NO.2</h5>
+<div class="wrap">
+	<ul class="newsList5 dddd"> 
+        <li>01</li> 
+        <li>02</li> 
+        <li>03</li> 
+        <li>04</li> 
+        <li>05</li> 
+        <li>06</li> 
+        <li>07</li> 
+        <li>08</li> 
+        <li>09</li> 
+        <li>10</li> 
+        <li>11</li> 
+        <li>12</li> 
+        <li>13</li> 
+        <li>14</li> 
+        <li>15</li> 
+        <li>16</li> 
+    </ul>
+</div>
+<br>
+<br>
+<h5>Case NO.3</h5>
+<div class="wrap">
+	<ul class="newsList6 dddd"> 
+        <li>01</li> 
+        <li>02</li> 
+        <li>03</li> 
+        <li>04</li> 
+        <li>05</li> 
+        <li>06</li> 
+        <li>07</li> 
+        <li>08</li> 
+        <li>09</li> 
+        <li>10</li> 
+        <li>11</li> 
+        <li>12</li> 
+        <li>13</li> 
+        <li>14</li> 
+        <li>15</li> 
+        <li>16</li> 
+    </ul>
+</div>
+<br>
+<br>
+<h5>Case NO.4</h5>
+<div class="wrap">
+	<div id="picList">
+    </div>
+    <script type="text/javascript">
+		var pic = "";
+		for(var i=0; i<100; i++){
+			pic +="<div>pic"+(i+1)+"</div>";
+		}
+		document.getElementById("picList").innerHTML = pic;
+	</script>
+</div>
+<br>
+<br>
+<h5>Case NO.5</h5>
+<div class="wrap">
+	<ul class="newsList dddd"> 
+        <li>01</li> 
+        <li>02</li> 
+        <li>03</li> 
+        <li>04</li> 
+        <li>05</li> 
+        <li>06</li> 
+        <li>07</li> 
+        <li>08</li> 
+        <li>09</li> 
+        <li>10</li> 
+        <li>11</li> 
+        <li>12</li> 
+        <li>13</li> 
+        <li>14</li> 
+        <li>15</li> 
+        <li>16</li> 
+        <li>17</li> 
+        <li>18</li> 
+        <li>19</li> 
+        <li>20</li> 
+        <li>21</li> 
+        <li>22</li> 
+        <li>23</li> 
+        <li>24</li> 
+        <li>25</li> 
+        <li>26</li> 
+        <li>27</li> 
+        <li>28</li> 
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+        <li>35</li>
+        <li>36</li>
+        <li>37</li>
+        <li>38</li>
+        <li>39</li>
+        <li>40</li>
+        <li>41</li>
+        <li>42</li>
+        <li>43</li>
+        <li>44</li>
+        <li>45</li>
+        <li>46</li>
+        <li>47</li>
+        <li>48</li>
+        <li>49</li>
+        <li>50</li>
+    </ul>
+</div>
+<br>
+<br>
+<h5>Case NO.6</h5>
+<div class="wrap">
+	<ul id="newsList2"> 
+        <li>01</li> 
+        <li>02</li> 
+        <li>03</li> 
+        <li>04</li> 
+        <li>05</li> 
+        <li>06</li> 
+        <li>07</li> 
+        <li>08</li> 
+        <li>09</li> 
+        <li>10</li> 
+        <li>11</li> 
+        <li>12</li> 
+        <li>13</li> 
+        <li>14</li> 
+        <li>15</li> 
+        <li>16</li> 
+        <li>17</li> 
+        <li>18</li> 
+        <li>19</li> 
+        <li>20</li> 
+        <li>21</li> 
+        <li>22</li> 
+        <li>23</li> 
+        <li>24</li> 
+        <li>25</li> 
+        <li>26</li> 
+        <li>27</li> 
+        <li>28</li> 
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+        <li>35</li>
+        <li>36</li>
+        <li>37</li>
+        <li>38</li>
+        <li>39</li>
+        <li>40</li>
+        <li>41</li>
+        <li>42</li>
+        <li>43</li>
+        <li>44</li>
+        <li>45</li>
+        <li>46</li>
+        <li>47</li>
+        <li>48</li>
+        <li>49</li>
+        <li>50</li>
+    </ul>
+</div>
+<!------------------------------->
+</div>
+<p class="st">使用方法：</p>
+<pre>
+<code>$("seletor").page({</code>
+    <code>showLineCount:整数 // 每页显示条数</code>
+    <code>showMaxPages:整数 // 默认为7 最小为7</code>
+    <code>bPrevNext:boolean // 是否显示上一页 和 下一页 按钮</code>
+    <code>bPagination:boolean // 是否显示页码</code>
+    <code>effectTime:整数 // 翻页的速度</code>	
+<code>})</code>
+</pre>
+
+</body>
+</html>
