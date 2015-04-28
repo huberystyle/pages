@@ -1,9 +1,12 @@
-#一个纯静态的前端分页效果
+# page
+
+一个纯静态的前端分页效果
 
 
 ######使用方法如下：######
-```js  $("selector").page({showLineCount:1,showMaxPages:7,bPrevNext:true,bPagination:true});```
-
+```js 
+$("selector").page({showLineCount:1,showMaxPages:7,bPrevNext:true,bPagination:true});
+```
 
 ######参数说明：######
 - showLineCount -> 每页显示行数
