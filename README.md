@@ -6,7 +6,7 @@
 
 
 ######参数说明：######
-* showLineCount 每页显示行数
-* showMaxPages 最大显示页数
-* bPrevNext 是否显示“上一页” 和 “下一页”
-* bPagination 是否显示页码
+* showLineCount -> 每页显示行数
+* showMaxPages -> 最大显示页数
+* bPrevNext -> 是否显示“上一页” 和 “下一页”
+* bPagination -> 是否显示页码
