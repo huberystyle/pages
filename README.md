@@ -2,7 +2,7 @@
 
 
 ######使用方法如下：######
-```js $("selector").page({showLineCount:1,showMaxPages:7,bPrevNext:true,bPagination:true});```
+```js  $("selector").page({showLineCount:1,showMaxPages:7,bPrevNext:true,bPagination:true});```
 
 
 ######参数说明：######
